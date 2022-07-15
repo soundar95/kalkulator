@@ -1,0 +1,25 @@
+Task 0: Create a simple git repository with a file name  ".notes". Push it to github, give access to me with my username "goswami1999". And share the link.
+Task 0 Done.
+
+Task 1:
+``` Create a JavaScript file with x functions:
+    sum: takes any number of arguments and returns the sum of it
+    min: takes any number of arguments and returns the minimum value
+    max: takes any number of arguments and returns the maximum value
+```
+
+Task 2: Convert the JavaScript file into a TypeScript file with explicit types of each variable,
+        proper return types for each function, and without using the “any” keyword as a type.
+
+Task 3:
+    Make a new branch called dev from the main branch.
+    Create a new nest application with the name “Calculator” in the existing repository and the dev branch
+
+----------------------------------------------------------------------
+
+Assesments
+Task 1:
+  - File name should be in kebab case or camel case (mathfunctions.js -> math-functions.js or mathFunctions.js)
+  - Functions are fine
+
+----------------------------------------------------------------------

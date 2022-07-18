@@ -20,6 +20,10 @@ Task 4:
 
 Task 5:
     Create a module named “calculate”
+    Add routes that perform the calculations in the js/ts file
+
+Task 6:
+    Make the apis take values in the form of an array of numbers and then perform the same operations
 
 ----------------------------------------------------------------------
 

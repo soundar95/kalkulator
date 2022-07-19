@@ -1,35 +1,13 @@
-Task 0: Create a simple git repository with a file name  ".notes". Push it to github, give access to me with my username "goswami1999". And share the link.
-Task 0 Done.
+Task 7:
+    - Rename the repository to FindMyCity
+    - Delete the calculate module and create a "locations" module that servers X APIs.
+    - /countries should return a list of countries
+    - /countries/10 should return the country with id 10
+    - /states should return a list of states
+    - /states?countryId=5 should return the states that belong to country 5
+    - /states/10 should return the state with id 10
+    - /cities should return the list of cities
+    - /cities/10 should return the city with id 10
+    - /cities?stateId=5 should return the cities that belong to state 5
 
-Task 1:
-``` Create a JavaScript file with x functions:
-    sum: takes any number of arguments and returns the sum of it
-    min: takes any number of arguments and returns the minimum value
-    max: takes any number of arguments and returns the maximum value
-```
-
-Task 2: Convert the JavaScript file into a TypeScript file with explicit types of each variable,
-        proper return types for each function, and without using the “any” keyword as a type.
-
-Task 3:
-    Make a new branch called dev from the main branch.
-    Create a new nest application with the name “Calculator” in the existing repository and the dev branch
-
-Task 4:
-    Create a nest application with the name “Calculator” in the existing repository
-
-Task 5:
-    Create a module named “calculate”
-    Add routes that perform the calculations in the js/ts file
-
-Task 6:
-    Make the apis take values in the form of an array of numbers and then perform the same operations
-
-----------------------------------------------------------------------
-
-Assesments
-Task 1:
-  - File name should be in kebab case or camel case (mathfunctions.js -> math-functions.js or mathFunctions.js)
-  - Functions are fine
-
-----------------------------------------------------------------------
+    - In database, all cities, states, and countries should have an id, and a name`

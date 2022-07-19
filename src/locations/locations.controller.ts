@@ -1,13 +1,18 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { CreateLocationDto } from './dto/createLocation.dto';
+import { FilterDto } from './dto/filterDto';
 import { LocationsService } from './locations.service';
 
 @Controller('locations')
 export class LocationsController {
   constructor(private locationService: LocationsService) {}
   @Get()
-  getAllLocations() {
-    return this.locationService.getAllLocations();
+  getTask(@Query() filterdto: FilterDto) {
+    if (Object.keys(filterdto).length) {
+      return this.locationService.getLocationwithFilter(filterdto);
+    } else {
+      return this.locationService.getAllLocations();
+    }
   }
   @Post()
   createLocation(@Body() createLocationDto: CreateLocationDto) {

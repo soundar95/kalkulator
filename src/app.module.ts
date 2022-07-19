@@ -1,7 +1,23 @@
 import { Module } from '@nestjs/common';
-import { CalculateModule } from './calculate/calculate.module';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { Locations } from './locations/entity/locations.entity';
+import { LocationsModule } from './locations/locations.module';
 
 @Module({
-  imports: [CalculateModule],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'postgres',
+      host: 'localhost',
+      port: 5432,
+      username: 'postgres',
+      password: '@Postgres123',
+      database: 'locations',
+      synchronize: true,
+      logging: true,
+      entities: [Locations],
+      subscribers: [],
+    }),
+    LocationsModule,
+  ],
 })
 export class AppModule {}
